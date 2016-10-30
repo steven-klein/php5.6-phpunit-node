@@ -1,6 +1,7 @@
 FROM ubuntu:trusty
 MAINTAINER Steven Klein <steven.p.klein@gmail.com>
 
+RUN apt-get update
 RUN apt-get -y install software-properties-common
 RUN add-apt-repository ppa:ondrej/php
 RUN curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
