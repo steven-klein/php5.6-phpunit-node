@@ -6,7 +6,7 @@ RUN apt-get -y install software-properties-common
 RUN add-apt-repository ppa:ondrej/php
 
 RUN apt-get update && apt-get -y --no-install-recommends --force-yes install wget build-essential git zip php5.6 php5.6-mysql php5.6-curl php5.6-sqlite php5.6-mcrypt php5.6-xml php5.6-gd php5.6-mbstring php5.6-json php5.6-zip
-RUN wget -qO- https://deb.nodesource.com/setup_4.x | sudo bash -
+RUN wget -qO- https://deb.nodesource.com/setup_8.x | sudo bash -
 RUN apt-get -y --no-install-recommends --force-yes install nodejs
 
 RUN apt-get -y autoremove
